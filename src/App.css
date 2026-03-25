@@ -1,0 +1,207 @@
+/* Full screen center */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7fa;
+}
+
+/* Card style */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+}
+
+/* Balance header */
+.balance {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+/* Input box */
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Button group */
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Add button */
+.add-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Withdraw button */
+.withdraw-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Hover effects */
+.add-btn:hover {
+    background-color: #218838;
+}
+
+.withdraw-btn:hover {
+    background-color: #c82333;
+}
+
+
+/* Product Layout Container */
+.product-card {
+  display: grid;
+  grid-template-columns: 180px 700px 200px;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Image Section */
+.product-image img {
+  width: 150px;
+}
+
+/* Product Details Section */
+.sponsored {
+  font-size: 12px;
+  color: gray;
+}
+
+.title {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+.rating {
+  margin: 6px 0;
+}
+
+.rating-badge {
+  background: #388e3c;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.reviews {
+  margin-left: 8px;
+  color: gray;
+  font-size: 13px;
+}
+
+.features {
+  margin-top: 8px;
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+/* Price Section */
+.price-section h2 {
+  margin: 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-right: 10px;
+}
+
+.discount {
+  color: green;
+  font-weight: 600;
+}
+
+.exchange {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.bank {
+  font-size: 14px;
+  color: green;
+}
+
+.assured {
+  margin-top: 6px;
+  color: #2874f0;
+  font-weight: 600;
+}
+
+.compare {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.sample-link{
+  text-decoration: none;
+  color: #218838;
+}
+
+/* Navbar container */
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* center items */
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 12px 0;
+    margin: 0;
+    gap: 30px; /* space between items */
+}
+
+/* Each list item */
+.navbar li {
+    display: inline;
+}
+
+/* Links */
+.navbar li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 14px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+
+/* Hover effect */
+.navbar li a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Active link (optional) */
+.navbar li a.active {
+    background-color: #1abc9c;
+    color: white;
+}
