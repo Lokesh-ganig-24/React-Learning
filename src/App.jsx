@@ -17,21 +17,41 @@ import './App.css'
 // // import Routing from './components10/Routing';
 // import ProductCard from './components10/ProductCard';
 // import Dash from './components10/Dash';
-import Routing from "./components10/Routing"
-import Function1 from './components10/Function1';
-import Function2 from './components10/Function2';
+//import Routing from "./components10/Routing"
+//import Function1 from './components10/Function1';
+//import Function2 from './components10/Function2';
+//import NormalComponent from './components10/hoc/NormalComponent';
+//import UpdatedComponent from './components10/hoc/UpdatedComponent';
+//import NormalUserComponents from './components10/hoc/NormalUserComponent';
+//import PremiumUser from './components10/hoc/PremiumUser';
+import GetApiData from './API/GetApiData';
+import Ipl from './API/ipl';
 // import ProductView from './components10/Produ/ProductView'
 /* import FirstComponent from './FirstComponent'
 import SecondComponent from './SecondComponent'
 import Sample from './components10/Sample' */
 
 function App() {
-   const isUser=false;
-  const data=isUser?<Function1/>:<Function2/>
+  /*  const isUser=false;
+  const data=isUser?<Function1/>:<Function2/> */
 return(
  <>
-   <Routing/>
-  
+
+<div>
+  <Ipl name="rcb" handle={gofortrophy}/>
+</div>
+
+
+  {/*  <Routing/> */}
+  {/* <NormalComponent name="Normal"/>
+  <UpdatedComponent name="Updated"/> */}
+
+  {/* <NormalUserComponents/>
+  <PremiumUser/> */}
+
+<Ipl/>
+
+  <GetApiData/>
  </>
 )
 }

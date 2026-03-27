@@ -1,10 +1,12 @@
 import React from "react";
- function LearnFragment(){
+
+function LearnFragment(){
     return(
         <React.Fragment>
-            <h1>line one </h1>
-            <h2>learn two</h2>
+            <h1>Line One</h1>
+            <h2>Line Two</h2>
         </React.Fragment>
     );
- }
- export default LearnFragment;
+}
+
+export default LearnFragment;
