@@ -21,7 +21,9 @@ function PostDataApi() {
       );
 
       const data = await response.json();
-      setResponseMessage(`Post created successfully! ID: ${data.id}`);
+      setResponseMessage(
+        `Post created successfully! ID: ${data.id}`
+      );
       setTitle("");
       setBody("");
     } catch (error) {
@@ -42,6 +44,7 @@ function PostDataApi() {
             onChange={(e) => setTitle(e.target.value)}
           />
         </div>
+
         <div>
           <label htmlFor="body">Body:</label>
           <textarea
@@ -50,8 +53,10 @@ function PostDataApi() {
             onChange={(e) => setBody(e.target.value)}
           ></textarea>
         </div>
+
         <button type="submit">Submit Post</button>
       </form>
+
       {responseMessage && <p>{responseMessage}</p>}
     </div>
   );

@@ -26,6 +26,7 @@ import './App.css'
 //import PremiumUser from './components10/hoc/PremiumUser';
 import GetApiData from './API/GetApiData';
 import Ipl from './API/ipl';
+import FnUnmount from './API/FnUnmount';
 // import ProductView from './components10/Produ/ProductView'
 /* import FirstComponent from './FirstComponent'
 import SecondComponent from './SecondComponent'
@@ -37,9 +38,9 @@ function App() {
 return(
  <>
 
-<div>
+{/* <div>
   <Ipl name="rcb" handle={gofortrophy}/>
-</div>
+</div> */}
 
 
   {/*  <Routing/> */}
@@ -49,9 +50,12 @@ return(
   {/* <NormalUserComponents/>
   <PremiumUser/> */}
 
-<Ipl/>
+//{/* <Ipl/> */}{/*  */}
 
-  <GetApiData/>
+ {/*  <GetApiData/> */}
+ <FnUnmount/>
+ 
+ 
  </>
 )
 }
