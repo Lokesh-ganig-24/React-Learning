@@ -1,5 +1,5 @@
-import { useState } from 'react'
-
+import React, { createContext } from 'react'
+import SecondComponent from './API/SecondComponent';
 import './App.css'
 // import ImageSample from './components10/ImageSample';
 // import Dashboard from './components10/Dashboard';
@@ -27,18 +27,29 @@ import './App.css'
 import GetApiData from './API/GetApiData';
 import Ipl from './API/ipl';
 import FnUnmount from './API/FnUnmount';
+import MemoExample from './API/MemoExample';
 // import ProductView from './components10/Produ/ProductView'
 /* import FirstComponent from './FirstComponent'
 import SecondComponent from './SecondComponent'
 import Sample from './components10/Sample' */
-
+export const UserContext =React.createContext();
 function App() {
+  const user = "David";
+   return (
+    <UserContext.Provider value={user}>
+      <h1>App Component</h1>
+      <SecondComponent />
+      <MemoExample/>
+    </UserContext.Provider>
+  );
+}
   /*  const isUser=false;
   const data=isUser?<Function1/>:<Function2/> */
-return(
+//return(
  <>
 
 {/* <div>
+
   <Ipl name="rcb" handle={gofortrophy}/>
 </div> */}
 
@@ -53,11 +64,12 @@ return(
 //{/* <Ipl/> */}{/*  */}
 
  {/*  <GetApiData/> */}
- <FnUnmount/>
- 
+ {/* <FnUnmount/> */}
+
  
  </>
-)
-}
+//)
+
 export default App;
+
 
