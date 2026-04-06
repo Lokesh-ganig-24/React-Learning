@@ -28,11 +28,15 @@ import GetApiData from './API/GetApiData';
 import Ipl from './API/ipl';
 import FnUnmount from './API/FnUnmount';
 import MemoExample from './API/MemoExample';
+import { AuthProvider } from './API/AuthProvider';
 // import ProductView from './components10/Produ/ProductView'
 /* import FirstComponent from './FirstComponent'
 import SecondComponent from './SecondComponent'
 import Sample from './components10/Sample' */
-export const UserContext =React.createContext();
+
+
+/* 
+ export const UserContext =React.createContext();
 function App() {
   const user = "David";
    return (
@@ -42,7 +46,50 @@ function App() {
       <MemoExample/>
     </UserContext.Provider>
   );
+} 
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+export const UserContext = React.createContext();
+
+function App() {
+  const { isLoggedIn, setIsLoggedIn } = UserContext(AuthContext);
+
+  return (
+    <div>
+      <h1>Simple Auth Example</h1>
+
+      {isLoggedIn ? (
+        <>
+          <h2>Welcome User ✅</h2>
+          <button onClick={() => setIsLoggedIn(false)}>Logout</button>
+        </>
+      ) : (
+        <>
+          <h2>Please Login ❌</h2>
+          <button onClick={() => setIsLoggedIn(true)}>Login</button>
+        </>
+      )}
+    </div>
+  );
 }
+
+
+
+
+
+
+
   /*  const isUser=false;
   const data=isUser?<Function1/>:<Function2/> */
 //return(
@@ -65,7 +112,7 @@ function App() {
 
  {/*  <GetApiData/> */}
  {/* <FnUnmount/> */}
-
+<AuthProvider/>
  
  </>
 //)
