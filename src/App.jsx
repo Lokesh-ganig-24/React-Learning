@@ -1,6 +1,7 @@
 import './App.css'
 import { CounterRedux } from './Redux/CounterRedux';
 import NewComp from './Redux/NewComponent';
+import PureC from './Redux/PureC';
 import Todo from './Redux/Todo';
 function App() {
 
@@ -8,7 +9,8 @@ function App() {
     <div>
      {/*  <CounterRedux/>
       <NewComp/> */}
-      <Todo/>
+     {/*  <Todo/> */}
+     <PureC/>
     </div>
   );
 }
